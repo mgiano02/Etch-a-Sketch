@@ -70,21 +70,25 @@ const row4 = document.createElement('div');
 // Create 4 rows and put divs in them
 
 for(let i = 1; i <= 16; i++){
-    const col = document.createElement('div');
+    let col = document.createElement('div');
     container.appendChild(col);
     col.classList.add('section');
     for (let j = 1; j <= 16; j++){
-        const box = document.createElement('div');
+        let box = document.createElement('div');
         box.classList.add('grid');
         box.innerText = '---------------';
         col.appendChild(box);
     }
 }
 
+const box = document.querySelectorAll('.grid');
+
 // Add hover effect
-// div1.addEventListener('mouseover', function(){
-//     div1.classList.add('hovered');
-// })
+box.forEach(box => {
+    box.addEventListener('mouseover', function(){
+        box.classList.add('hovered');
+    });
+});
 
 // Add button popup
 const btn = document.querySelector('#btn');
