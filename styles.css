@@ -1,18 +1,23 @@
 div {
     border: 1px solid black;
-    /* height: ;
-    width: ;
-    display: flex;*/
+    height: auto;
+    width: auto;
+    /* display: flex; */
     flex-wrap: wrap;
     flex: 1;
 }
 
 #container {
-    height: auto;
-    width: auto;
+    /* height: 500px;
+    width: 500px; */
     display: flex;
 }
 
 .hovered {
     background-color: purple;
 }
+
+/* .grid {
+    width: auto;
+    height: auto;
+} */
