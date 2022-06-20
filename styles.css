@@ -1,0 +1,18 @@
+div {
+    border: 1px solid black;
+    /* height: ;
+    width: ;
+    display: flex;*/
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+#container {
+    height: auto;
+    width: auto;
+    display: flex;
+}
+
+.hovered {
+    background-color: purple;
+}
